@@ -1,0 +1,229 @@
+@keyframes first-div{
+   0% {background-color:blue;}
+   100% {background-color:green;}
+}
+
+#div1{
+    animation-name :first-div ;
+    animation-duration: 5s ;
+    background-color: black;
+    width:100px;
+    height:100px;
+    border: 1px solid yellow;
+}
+@keyframes second-div{
+    0%{background-color:blue ;}
+    25%{background-color: green;}
+    50%{background-color: yellow;}
+    100%{background-color: red;}
+}
+#div2{
+    background-color: blue;
+    animation-name: second-div;
+    animation-duration: 5s;
+    width:100px;
+    height:100px;
+    border: 1px solid yellow;
+}
+#img3{
+    width: 200px;
+    animation: opacity-img;
+    animation-duration: 5s;
+}
+@keyframes opacity-img{
+    from{opacity: 100%;}
+    to{opacity:0%}
+}
+@keyframes filter-img{
+
+    0%{filter: sepia(1);}
+    100%{filter:sepia(0)}
+}
+#img4{
+    animation-name:filter-img;
+    animation-duration: 5s;
+
+}
+@keyframes grayscale-img{
+    from{filter:grayscale(1);}
+    to{filter:grayscale(0)}
+}
+#img5{
+    animation-name:grayscale-img ;
+    animation-duration: 5s;
+    width: 20vw;
+
+}
+@keyframes transform-div{
+   0% {background-color: orange;}
+   50%{transform: translate(300px)}
+   100% {background-color:pink;}
+   
+}
+
+#div6{
+    background-color:orange ;
+    animation-name: transform-div;
+    animation-duration: 5s;
+    height: 100px;
+    width: 100px;
+    border: 1px black solid;
+ 
+    
+}
+@keyframes bg-transform{
+    10%{background-color: greenyellow;}
+    15%{background-color:yellow ;}
+    25%{background-color: aqua;}
+    50%{transform: translatey(-100px);}
+
+}
+#div7{
+    background-color: red;
+    animation-name: bg-transform;
+    animation-duration: 5s;
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes ds-cr7{
+   0% {filter: drop-shadow(30px 30px 10px #302e2e);}
+   50%{filter: drop-shadow(20px 20px 10px #f7ff04);}
+   100%{filter: drop-shadow(10px 10px 10px #454543);}
+}
+
+
+#img8{
+    animation-name: ds-cr7;
+    animation-duration: 5s;
+    width:30vw;
+}
+
+@keyframes blur-cr7{
+    0% {filter: blur(10px);}
+    50% {filter: blur(5px);}
+    100% {filter: blur(0);}
+   
+}
+ 
+#img9{
+     animation-name:blur-cr7;
+     animation-duration: 3s;
+     width:30vw;
+ }
+
+ @keyframes shadow-cr7-10{
+    0%{filter:drop-shadow(30px 30px 10px black);}
+    10%{filter:drop-shadow(20px 20px 10px yellow) ;}
+    15%{filter:drop-shadow(10px 10px 10px rgb(255, 170, 0)) ;}
+    50%{filter: saturate(1);}
+   100%{width: 50vw; height:50vh;}
+    
+ }
+
+ #img10{
+    width:30vw;
+}
+#img10:hover{
+    animation-name:shadow-cr7-10;
+    animation-duration: 5s;
+    width:30vw;
+}
+
+@keyframes div-size{
+    0%{width: 30px;
+        height: 100px;
+    }
+    100%{width: 100px;
+       height:100px;
+    }
+}
+
+#div9{
+    height: 100px;
+    width: 30px;
+    animation-name: div-size;
+    animation-duration: 5s;
+    border: 1px solid black;
+    
+}
+@keyframes div-size2{
+    0%{width: 10px;}
+    25%{width: 30px;}
+    50%{width: 70px;}
+    100%{width: 200px;}
+
+}
+ #div10{
+     animation-name: div-size2;
+     animation-duration: 5s;
+    width: 10px;
+    height: 100px;
+    border: 1px black solid;
+ }
+ @keyframes messi-10-b{
+    from{filter: brightness(0);}
+    to{filter: brightness(1);}
+ }  
+
+ #messi-10{
+     animation-name: messi-10-b;
+     animation-duration: 5s;
+     width: 20vw;
+ }
+
+ @keyframes messi-10-m{
+    0%{width: 20vw;}
+    100%{width:30vw;}
+ }
+
+ #messi-101{
+     width: 20vw;
+    animation-name: messi-10-m;
+    animation-duration: 5s;
+ }
+
+ @keyframes cr7b-b{
+     0%{filter:saturate(1);}
+     25%{filter:saturate(2);}
+     50%{filter: grayscale(2);}
+     100%{filter: contrast(1);}
+ }
+
+ #cr7-gif{
+     animation-name: cr7b-b;
+     animation-duration:5s;
+     width:20vw;
+ }
+
+@keyframes sliding-box{
+    50%{transform: translate(-200px);}
+
+}
+
+#div11{
+    animation-name: sliding-box;
+    animation-duration: 3s;
+    background-color: #f7ff04;
+    width:200px;
+    height:200px;
+    border: 1px solid black;
+    float:right;
+}
+@keyframes circle-box{
+    0%{width: 20px;height: 20px;}
+    25%{width: 100px;height: 100px;}
+    50%{width: 50px;height: 50px; transform: translateY(-200px);}
+        100%{width: 100px;height: 100px;}
+}
+
+#div12{
+    animation-name: circle-box;
+    animation-duration: 7s;
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: right;
+    
+}
